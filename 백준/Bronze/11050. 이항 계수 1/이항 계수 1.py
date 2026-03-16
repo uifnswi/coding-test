@@ -1,14 +1,7 @@
-import sys
-input=sys.stdin.readline
-
+def fac(a):
+    r=1
+    for i in range(2,a+1):
+        r*=i
+    return r
 n,k=map(int,input().split())
-
-def factorial(n):
-    if n==0 or n==1:
-        return 1
-    else:
-        return n*factorial(n-1)
-
-a=factorial(n)//(factorial(n-k)*factorial(k))
-
-print(a)
+print(fac(n)//(fac(k)*(fac(n-k))))
