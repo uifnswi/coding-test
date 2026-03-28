@@ -1,7 +1,10 @@
-sum=0
+arr=[]
 for i in range(5):
-    a=int(input())
-    if a<=40:
-        a=40
-    sum+=a
-print(sum//5)
+    arr.append(int(input()))
+
+t=0
+for i in arr:
+    if i<40:
+        t+=40
+    else:t+=i
+print(t//5)
