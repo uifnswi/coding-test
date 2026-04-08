@@ -1,4 +1,5 @@
-
+import sys
+input = sys.stdin.readline
 from collections import deque
 dq=deque()
 n=int(input())
